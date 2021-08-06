@@ -1,0 +1,348 @@
+:root {
+  --primary:#fff;
+}
+body {
+  display: flex;
+  flex: 4;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+
+}
+#header {
+  display: flex;
+  height: 80px;
+  position: sticky;
+  font-weight: 600;
+  font-size: 24px;
+  background-color: #1c2237;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  z-index: 999;
+}
+#header > h3 {
+  margin-left: 20px;
+}
+#header nav > ul{
+  display: flex;
+
+}
+#header nav > ul > li{
+  display: flex;
+  border-bottom: 2px solid transparent;
+}
+#header nav > ul > li > a{
+  display: block;
+  color: #fff;
+  padding: 8px 16px;
+  margin: 0;
+  text-decoration: none;
+}
+
+#header nav > ul > li:hover{ 
+  border-bottom: 2px solid #f00946;
+}
+.drop-btn {
+  background-color: #f00946;
+  color: white;
+  padding: 8px 16px;
+  font-size: 24px;
+  
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  transition: all 0.3s ease-out;
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  margin-right: 30px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1c2237;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-content a:hover {
+  background-color: #1c2237;
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.drop-btn:hover .drop-btn {
+  background-color: #0f2910;
+  border-bottom: 2px solid #f00946;
+}
+#body-container{
+  flex: 4;
+}
+
+.main-info {
+  display: flex;
+
+}
+
+.side-img{
+  flex: 1;
+  margin: 0;
+
+}
+.side-img > img {
+  width: 500px;
+  height: 830px;
+}
+.biodata{
+  flex: 2;
+  flex-direction: column;
+  width: 200px;
+  height: 770px;
+  padding: 0;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px; 
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 15px -10px #2f1212;
+  box-shadow: 0px 0px 15px -10px #251515;
+  justify-content: center;
+  align-items: center;
+}
+.biodata-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #d51b4d;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 18px;
+}
+.biodata > span {
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(79, 49, 49);
+  justify-content: center;
+  align-items: center;
+}
+.biodata-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+.biodata-detail > span{
+  font-size: 14px;
+  font-weight: 200 !important;
+}
+.short-story {
+  flex: 3;
+  border-radius: 10px;
+  height: 770px;
+  margin-top: 30px;
+  margin-right: 10px;
+  font-family: 'PT Sans', sans-serif;
+  -webkit-box-shadow: 0px 0px 15px -10px #2f1212;
+  box-shadow: 0px 0px 15px -10px #251515;
+}
+hr {
+  border-top: 10px dotted red;
+  align-items: center;
+  margin-right: 300px;
+  margin-left: 300px;
+  letter-spacing: 50px;
+}
+.story-title{
+  display: flex;
+  height: 65px;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #0d2475;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 18px;
+}
+.early-life-title, .early-career-title, .honours-title, .carreer-title{
+  color: #f00946;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  margin-left: 10px;
+}
+.early-career-body, .early-life-body, .honours-body, .career-body{
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 1.1;
+  font-weight: 400;
+  color: black;
+  text-align: justify;
+  margin-left: 10px;
+  padding-left: 10px;
+  margin-right: 20px;
+}
+.early-life {
+  justify-content: space-between;
+}
+.early-life-img{
+  float: right;
+  height: 70px;
+  width: 100px;
+}
+.honours-body > li {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.carreer-title {
+  margin-bottom: 0;
+}
+.career-body {
+  padding-left: 0;
+  border: 1px solid darkblue;
+}
+.career-body-title > tr > td {
+  width: 200px;
+  border: 1px solid darkblue;
+  background-color: #1c2237;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  text-align: center;
+}
+.career-body-item tr td{
+  padding-left: 10px;
+  border: 1px solid darkblue;
+  color: #6d0513;
+  background-color: rgb(241, 184, 241);
+}
+.career-body-img {
+  float: right;
+  width: 230px;
+  height: 260px;
+  margin-bottom: -185px;
+  margin-right: 40px;
+}
+.video-intro {
+  display: flex;
+  height: 830px;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c2237;
+}
+.video-intro > h3 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+#footer{
+  display: flex;
+  height: 200px;
+  margin-bottom: 0;
+  background-color: #1c2237;
+  padding: 4rem 0 2rem 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.footer-connect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 24px;
+  color: #fff;
+}
+
+.footer-connect > p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.footer-connect-heading {
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.footer-connect-text {
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+.input-areas {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-input {
+  padding: 8px 24px;
+  border-radius: 2px;
+  margin-right: 10px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border: 1px solid #fff;
+}
+.connect-button {
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease-out;
+}
+.connect-button:hover {
+  transition: all 0.3s ease-out;
+  background: #fff;
+  color: #242424;
+}
+.connect-button > a {
+  text-decoration: none;
+  color:inherit;
+}
